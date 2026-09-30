@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANYAI Digital Store — AI tools & digital subscriptions for way less</title>
+  <meta name="description" content="ANYAI Digital Store: AI tools, software and digital subscriptions with clear delivery info, warranty on every product, and human support on Telegram. Prices in USD.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- Floating pill header -->
+  <div class="header-wrap">
+    <header class="header">
+      <a class="logo" href="#top" aria-label="ANYAI Digital Store home">
+        <span class="logo-mark">A</span>
+        <span class="logo-name" data-store-name>ANYAI</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#products">Products</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Support</a>
+      </nav>
+      <div class="header-search">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="search" type="search" placeholder="Search products…" aria-label="Search products">
+      </div>
+      <a class="btn btn-primary btn-sm" data-telegram href="https://t.me/anyaistore">Shop on Telegram</a>
+    </header>
+  </div>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero-sec">
+      <div class="wrap">
+        <div class="hero reveal visible">
+          <div class="hero-left">
+            <span class="eyebrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+              Instant delivery · 24/7
+            </span>
+            <h1><span data-store-name>ANYAI Digital Store</span><br><span class="blue">delivered in seconds.</span></h1>
+            <p class="lead">Software, AI and digital entertainment with clear information before you pay — know exactly how your product is delivered, and get real human support before and after your purchase.</p>
+            <form class="hero-search" id="hero-search-form" role="search">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+              <input id="hero-search" type="search" placeholder="What are you looking for?" aria-label="Search products">
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+            <div class="quick-pills" id="quick-pills" aria-label="Popular categories"></div>
+          </div>
+          <aside class="popular" aria-label="Popular right now">
+            <div class="popular-head">
+              <strong>Popular right now</strong>
+              <span class="live"><span class="live-dot" aria-hidden="true"></span>Live</span>
+            </div>
+            <div id="popular-rows"></div>
+            <a class="btn btn-ghost btn-block" href="#products">See what's trending
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-sec">
+      <div class="wrap">
+        <div class="stats">
+          <div class="stat reveal">
+            <div class="stat-num" id="stat-products">22</div>
+            <div class="stat-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+              Products
+            </div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat-num" id="stat-cats">28</div>
+            <div class="stat-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+              Categories
+            </div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat-num">24/7</div>
+            <div class="stat-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+              Telegram support
+            </div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              Warranty included
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+              Browse
+            </span>
+            <h2>Top categories</h2>
+            <p>Where our customers shop most.</p>
+          </div>
+          <button class="btn btn-ghost" id="all-cats">All categories
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+        <div class="cat-tiles" id="cat-tiles"></div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" id="products">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+              Featured
+            </span>
+            <h2>Trending this week</h2>
+            <p>Pick a category or search — every product shows its price, delivery type and warranty before you buy.</p>
+          </div>
+          <button class="btn btn-ghost" id="all-products">All products
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+        <div class="chips" id="chips" aria-label="Filter by category"></div>
+        <p id="result-count"></p>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 2.6-3 4"/><circle cx="12" cy="17.5" r=".5" fill="currentColor"/></svg>
+              How it works
+            </span>
+            <h2>Buying in three steps</h2>
+            <p>No surprises, no hidden terms.</p>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            </div>
+            <h3>Pick a product</h3>
+            <p>Browse the catalog and pick the product and plan length that fits you. Details open right on the card.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            </div>
+            <h3>Pay your way</h3>
+            <p>Complete your order in our Telegram shop with your USD wallet balance — top up with USDT, Binance Pay and more.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+            </div>
+            <h3>Get it instantly</h3>
+            <p>Most products are delivered instantly and automatically — an invitation, code, account access or redeem link, shown before you pay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section class="section" id="support">
+      <div class="wrap">
+        <div class="support reveal">
+          <div>
+            <span class="eyebrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+              Support
+            </span>
+            <h2>Human support, before and after you buy</h2>
+            <p data-support-note>Support on Telegram before and after your purchase.</p>
+            <ul>
+              <li><span class="tick">✓</span>Help choosing the right product and plan</li>
+              <li><span class="tick">✓</span>Order status and delivery follow-up</li>
+              <li><span class="tick">✓</span>Help during activation, plus warranty replacements</li>
+            </ul>
+            <a class="btn btn-primary" data-telegram href="https://t.me/anyaistore">Message us on Telegram</a>
+          </div>
+          <div class="chat-mock" aria-hidden="true">
+            <div class="bubble them">Hi! I'd like to check the status of my order.</div>
+            <div class="bubble us">Sure — send me your order number and I'll look it up.</div>
+            <div class="bubble them">It's order #1042</div>
+            <div class="bubble us">All set — your activation is complete. Check your inbox.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 2.6-3 4"/><circle cx="12" cy="17.5" r=".5" fill="currentColor"/></svg>
+              FAQ
+            </span>
+            <h2>Frequently asked questions</h2>
+            <p>Anything else? Ask us directly on Telegram.</p>
+          </div>
+        </div>
+        <div class="faq" id="faq"></div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+      <div class="wrap">
+        <div class="cta-band reveal">
+          <span class="eyebrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+            Get started
+          </span>
+          <h2>Start shopping smarter</h2>
+          <p>Browse the catalog, check delivery and warranty upfront, then check out in seconds on Telegram.</p>
+          <div class="cta-btns">
+            <a class="btn btn-primary" href="#products">Browse products
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-neutral" data-telegram href="https://t.me/anyaistore">Chat on Telegram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-card">
+        <div class="footer-grid">
+          <div>
+            <a class="logo" href="#top" aria-label="ANYAI Digital Store home">
+              <span class="logo-mark">A</span>
+              <span class="logo-name" data-store-name>ANYAI</span>
+            </a>
+            <p class="tagline" data-tagline>Your favorite AI tools, for way less</p>
+            <a class="btn btn-primary btn-sm" data-telegram href="https://t.me/anyaistore">Open Telegram shop</a>
+          </div>
+          <div>
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#products">All products</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#how">How it works</a></li>
+              <li><a data-telegram href="https://t.me/anyaistore">Telegram shop</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#support">Contact support</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a data-telegram href="https://t.me/anyaistore">Telegram channel</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Refund policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pay-row" aria-label="Accepted payment methods">
+          <span class="pay-pill">USDT</span>
+          <span class="pay-pill">Binance Pay</span>
+          <span class="pay-pill">Wallet balance</span>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 <span data-store-name>ANYAI Digital Store</span>. All rights reserved.</span>
+          <span class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Refunds</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick-view modal -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-label="Product details">
+    <div class="modal" tabindex="-1">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="assets/products.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
